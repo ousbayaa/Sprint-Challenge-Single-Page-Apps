@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: In using client side routing, the page does not refresh and it displays the data instantly.
 
 ## Project Set Up
 
