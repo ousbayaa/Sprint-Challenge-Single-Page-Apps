@@ -1,9 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import CharacterList from "./CharacterList";
+import SearchForm from "./SearchForm";
 
 export default function WelcomePage() {
+  const [searchTerm, setSearchTerm] = useState("");
+
+
   return (
     <section className="welcome-page">
+      <SearchForm setState={setSearchTerm} state={searchTerm}/>
       <header>
         <h1>Welcome to the ultimate fan site!</h1>
         <img
@@ -12,7 +17,7 @@ export default function WelcomePage() {
           alt="rick"
         />
       </header>
-      <CharacterList />
+      <CharacterList searchTerm={searchTerm}/>
     </section>
   );
 }
